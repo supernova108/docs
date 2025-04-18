@@ -1,0 +1,87 @@
+---
+title: Zoko
+description: "Configure WhatsApp templates in Zoko and integrate with ReferRush using the provided steps."
+---
+
+This guide provides the steps to integrate Zoko with ReferRush for WhatsApp messaging.
+
+## Part 1: Create a Campaign (Template) in Zoko
+
+Follow these steps within your Zoko dashboard.
+
+<Steps>
+  <Step>
+    ### Step 1: Create a Campaign
+
+    *   Create a new Campaign in Zoko.
+    *   Use the message text provided by ReferRush.
+    *   Set the Call-to-Action (CTA) button to dynamic and keep it as default.
+    *   Upload the header image.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Set Up Automation Variables
+
+    *   Set up the necessary automation variables as given in the ReferRush template preview page.
+
+  </Step>
+
+  <Step>
+    ### Step 3: Final Steps
+
+    *   Place each variable correctly in the template body.
+    *   Ensure the header image is added.
+    *   Launch the automation.
+
+    <Info>
+      You will need the `template_id`, `api_key`, and optional `header image URL` from Zoko for the next part.
+    </Info>
+
+  </Step>
+</Steps>
+
+## Part 2: Configure ReferRush
+
+Gather the required information from Zoko and enter it into your ReferRush settings.
+
+<Steps>
+  <Step>
+    ### Step 1: Locate Template ID in Zoko
+
+    1.  Navigate to the Zoko dashboard.
+    2.  Go to the "Templates" section.
+    3.  Locate the corresponding template for this event.
+    4.  Copy the **Template ID** from the template details.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Find API Key in Zoko
+
+    *   Find your **API key** in the Zoko account settings.
+  </Step>
+
+  <Step>
+    ### Step 3: Enter Details in ReferRush
+
+    *   Navigate to the configuration section for the specific message template you are setting up.
+    *   Paste the **Template ID** (copied in Step 1) into the "Template ID" field.
+    *   Paste your **API Key** into the "API Key" field.
+    *   Add the direct **Header Image URL** into the corresponding field if your template uses one and you have the URL.
+    *   Save the settings in ReferRush.
+
+  </Step>
+</Steps>
+
+## Part 3: Test the Integration
+<Steps>
+  <Step>
+    ### Step 1: Test the Integration
+    *   Go to the test tab
+    *   Test the integration by sending a test message from ReferRush.
+  </Step>
+</Steps>
+
+If all the things are working fine, the setup using the provided steps is now complete click on Finish.
+ReferRush will use the Template ID and API Key to send messages via Zoko.

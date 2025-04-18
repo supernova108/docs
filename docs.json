@@ -7,7 +7,7 @@
     "light": "#07C983", 
     "dark": "#15803D" 
   },
-  "favicon": "https://firebasestorage.googleapis.com/v0/b/refero1.appspot.com/o/doc-images%2Ffavicon.ico?alt=media&token=d80cd76f-5a6c-4a18-add6-c32a2668d9f5", 
+  "favicon": "./favicon.ico", 
   "navigation": {
     "tabs": [
       {
@@ -28,18 +28,34 @@
           {
             "group": "Communication Channels",
             "pages": [
-              "communication/whatsapp", 
-              "communication/email"
+              "communication/email",
+              "communication/whatsapp",
+              {
+                "group": "Whatsapp BSP Integration",
+                "pages": [
+                  "communication/whatsapp/business-on-bots",
+                  "communication/whatsapp/tellephant",
+                  "communication/whatsapp/bik",
+                  "communication/whatsapp/sage-pilot",
+                  "communication/whatsapp/limechat",
+                  "communication/whatsapp/zoko"
+
+                ]
+              }
             ]
           }
         ]
       }
     ]
   },
+  "logo": {
+    "light": "/favicon.ico",
+    "dark": "/favicon.ico"
+  },
   "navbar": {
     "primary": {
       "type": "button",
-      "label": "ReferRush", 
+      "label": " Back to ReferRush", 
       "href": "https://referrush.com/" 
     }
   },

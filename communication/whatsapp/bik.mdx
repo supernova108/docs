@@ -1,0 +1,80 @@
+---
+title: Bik
+description: "Configure WhatsApp templates in Bik and integrate with ReferRush using the provided steps."
+---
+
+This guide provides the steps to integrate Bik with ReferRush for WhatsApp messaging.
+
+## Part 1: Create a Campaign (Template) in Bik
+
+Follow these steps within your Bik dashboard.
+
+<Steps>
+  <Step>
+    ### Step 1: Create a Template
+
+    *   Create a new Template in Bik.
+    *   Use the message text provided by ReferRush.
+    *   Replace the `{{ 1 }}` variables with general-editable variables using the add variable button.
+    *   Set the Call-to-Action (CTA) button to custom URL and keep it as `https://referrush.com/whatsapp/default`.
+    *   Upload the required header image.
+    *   Save the template.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Locate Template ID and Other Details
+
+    *  After saving the template, note the Template ID.
+    *  You will also need the API Key, Secret, and App ID from your Bik account.
+
+    <Info>
+      You will need the `template_id`, `API Key`, `Secret`, and `App ID` from Bik for the next part.
+    </Info>
+
+  </Step>
+</Steps>
+
+## Part 2: Configure ReferRush
+
+Gather the required information from Bik and enter it into your ReferRush settings.
+
+<Steps>
+  <Step>
+    ### Step 1: Locate Template ID in Bik
+
+    1.  Navigate to the Bik dashboard.
+    2.  Go to the "Templates" section.
+    3.  Locate the corresponding template you created for the specific ReferRush event (e.g., Welcome message).
+    4.  Copy the **Template ID** from the template details.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Find API Key, Secret, and App ID in Bik
+
+    *   Find your **API Key**, **Secret**, and **App ID** within your Bik account settings. Copy them.
+  </Step>
+
+  <Step>
+    ### Step 3: Enter Details in ReferRush
+
+    *   Navigate to the configuration section for the specific message template you are setting up.
+    *   Paste the **Template ID** (copied in Step 1) into the "Template ID" field.
+    *   Paste your **API Key**, **Secret**, and **App ID** (copied in Step 2) into the corresponding fields.
+    *   Save the settings in ReferRush.
+
+  </Step>
+</Steps>
+
+## Part 3: Test the Integration
+<Steps>
+  <Step>
+    ### Step 1: Test the Integration
+    *   Go to the test tab
+    *   Test the integration by sending a test message from ReferRush.
+  </Step>
+</Steps>
+
+If all the things are working fine, the setup using the provided steps is now complete click on Finish.
+ReferRush will use the Template ID, API Key, Secret, and App ID to send messages via Bik.

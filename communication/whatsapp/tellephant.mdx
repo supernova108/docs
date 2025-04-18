@@ -1,0 +1,87 @@
+---
+title: Tellephant
+description: "Configure WhatsApp templates in Tellephant and integrate with ReferRush using the provided steps."
+---
+
+This guide follows the specific steps required to integrate Tellephant with ReferRush for WhatsApp messaging.
+
+## Part 1: Create a Campaign (Template) in Tellephant
+
+Follow these steps within your Tellephant dashboard.
+
+<Steps>
+  <Step>
+    ### Step 1: Create a Campaign
+
+    *   Create a new Campaign in Tellephant.
+    *   Use the message text provided by ReferRush in the preview page.
+    *   Set the Call-to-Action (CTA) button type to **Dynamic** and keep the default settings for it.
+    *   Upload the required header image provided by ReferRush.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Set Up Automation Variables
+
+    *   Identify and set up the necessary automation variables as mentioned in the Tellephant template preview page.
+
+  </Step>
+
+  <Step>
+    ### Step 3: Final Steps (in Tellephant)
+
+    *   Place each variable correctly within the template body.
+    *   Ensure the header image is correctly added/associated.
+    *   Launch the automation associated with this template in Tellephant.
+
+    <Info>
+      You will need the `template_id`, your `api_key`, and the `header image URL` from Tellephant for the next part.
+    </Info>
+
+  </Step>
+</Steps>
+
+## Part 2: Configure ReferRush
+
+Gather the required information from Tellephant and enter it into your ReferRush settings.
+
+<Steps>
+  <Step>
+    ### Step 1: Locate Template ID in Tellephant
+
+    1.  Navigate to the Tellephant dashboard.
+    2.  Go to the "Templates" section.
+    3.  Locate the corresponding template you created for the specific ReferRush event (e.g., Welcome message).
+    4.  Copy the **Template ID** from the template details.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Find API Key in Tellephant
+
+    *   Find your **API key** within your Tellephant account settings or profile section. Copy it.
+  </Step>
+
+  <Step>
+    ### Step 3: Enter Details in ReferRush
+
+    *   Navigate to the configuration section for the specific message template you are setting up.
+    *   Paste the **Template ID** (copied in Step 1) into the "Template ID" field.
+    *   Paste your **API Key** (copied in Step 2) into the "API Key" field.
+    *   Optionally, add the direct **Header Image URL** into the corresponding field if your template uses one and requires it here.
+    *   Save the settings in ReferRush.
+
+  </Step>
+</Steps>
+
+## Part 3: Test the Integration
+<Steps>
+  <Step>
+    ### Step 1: Test the Integration
+    *   Go to the test tab
+    *   Test the integration by sending a test message from ReferRush.
+  </Step>
+</Steps>
+
+If all the things are working fine, the setup using the provided steps is now complete click on Finish. 
+ReferRush will use the Template ID and API Key to send messages via Tellephant.

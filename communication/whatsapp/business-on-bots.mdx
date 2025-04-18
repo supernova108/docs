@@ -1,0 +1,95 @@
+---
+title: Business On Bots
+description: "Configure WhatsApp templates and automation in BusinessOnBots (BOB) using the provided steps."
+---
+
+This guide follows the specific steps required to integrate BusinessOnBots (BOB) with ReferRush for WhatsApp messaging.
+
+## Part 1: Create a Campaign (Template) in BOB
+
+Follow these steps within your BusinessOnBots dashboard.
+
+<Steps>
+  <Step>
+    ### Step 1: Create a Campaign
+
+    *   Create a new Campaign in BOB.
+    *   Use the message text provided by ReferRush (likely shown on the right side of the ReferRush configuration screen).
+    *   Set the Call-to-Action (CTA) button type to **Dynamic** and keep the default settings for it.
+    *   Upload the required header image provided by ReferRush.
+
+    </Step>
+</Steps>
+
+## Part 2: Configure Automation in BOB
+
+Follow these steps within the Automations section of your BusinessOnBots dashboard.
+
+<Steps>
+  <Step>
+    ### Step 1: Navigate to Automations
+
+    Go to the "Automations" section in your BusinessOnBots dashboard.
+
+  </Step>
+
+  <Step>
+    ### Step 2: Deploy Automation
+
+    Ensure the automation related to the template you created is deployed or active. (This step assumes an automation is already partially created or selected).
+
+  </Step>
+
+  <Step>
+    ### Step 3: Locate Corresponding Automation
+
+    Find and select the specific automation workflow that corresponds to the message template you are setting up (e.g., the Welcome message automation).
+
+  </Step>
+
+  <Step>
+    ### Step 4: Copy Webhook Link
+
+    Within the selected automation's settings (likely in the trigger configuration), click "Copy Webhook Link" to get the unique webhook URL for this automation.
+
+  </Step>
+
+  <Step>
+    ### Step 5: Find Platform Details
+
+    1.  Click the "View Automation" icon (described as the second icon at the bottom) for the selected automation.
+    2.  Scroll within the automation details to find the "Message Body" section.
+    3.  Look for the "Platform" field within this section to get the platform details.
+
+  </Step>
+</Steps>
+
+## Part 3: Configure ReferRush
+
+Finally, update your ReferRush settings.
+
+<Steps>
+  <Step>
+    ### Step 1: Enter Details in ReferRush
+
+    *   Go to the WhatsApp  tab in your ReferRush dashboard.
+    *   Go to the WhatsApp template you want to add.
+    *   Go to configure tab
+    *   Paste the **Webhook Link** (copied in Part 2, Step 4) into the appropriate field for the message type you configured.
+    *   Enter Platform
+    *   Save the settings in ReferRush.
+
+  </Step>
+</Steps>
+
+
+## Part 3: Test the Integration
+<Steps>
+  <Step>
+    ### Step 1: Test the Integration
+    *   Go to the test tab
+    *   Test the integration by sending a test message from ReferRush.
+  </Step>
+</Steps>
+
+If all the things are working fine, the setup using the provided steps is now complete click on Finish. 
